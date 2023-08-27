@@ -1,0 +1,41 @@
+[
+   {
+    "id":1,
+    "name":"japanese book",
+    "price":30.3,
+    "imgUrl":"/images/img.jpeg"
+   },
+   {
+    "id":2,
+    "name":"Bananas",
+    "price":22.3,
+    "imgUrl":"/images/img1.jpg"
+   },
+   {
+    "id":3,
+    "name":"Read More",
+    "price":19.3,
+    "imgUrl":"/images/img2.jpg"
+   },
+   {
+        "id":4,
+        "name":"Korean Books",
+        "price":44.5,
+        "imgUrl":"/images/img4.jpg"
+   },
+   {
+      "id":5,
+      "name":"Read From Here",
+      "price":44.9,
+      "imgUrl":"/images/img3.jpeg"
+   },
+   {
+      "id":6,
+      "name":"Thailand Books",
+      "price":119.4,
+      "imgUrl":"/images/img5.jpg"
+   }
+   
+ 
+  
+]
