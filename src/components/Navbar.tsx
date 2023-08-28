@@ -1,6 +1,8 @@
 import {NavLink} from 'react-router-dom'
 import {BsCart3} from 'react-icons/bs'
+import { useShopping } from '../context/ShoppingCartContext'
 export const Navbar=()=>{
+    const{OpenCart}=useShopping();
     return(
         <div className='flex justify-between items-center p-4 mx-auto bg-slate-200 sticky top-0 shadow-lg'>
             <div className='space-x-10 text-bold text-lg text-blue-950 '>
@@ -9,7 +11,7 @@ export const Navbar=()=>{
               <NavLink to="/about">About</NavLink>
             </div>
             <div className='relative flex'>
-                <div className='border border-gray-500 rounded-lg px-3 py-1 cursor-pointer hover:bg-slate-400'>
+                <div className='border border-gray-500 rounded-lg px-3 py-1 cursor-pointer hover:bg-slate-400' onClick={OpenCart}>
                 <BsCart3 size={30}/>
                 </div>
                
