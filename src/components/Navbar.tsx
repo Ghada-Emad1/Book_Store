@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom'
 import {BsCart3} from 'react-icons/bs'
 import { useShopping } from '../context/ShoppingCartContext'
 export const Navbar=()=>{
-    const{OpenCart}=useShopping();
+    const{OpenCart,CartQuantity}=useShopping();
     return(
         <div className='flex justify-between items-center p-4 mx-auto bg-slate-200 sticky top-0 shadow-lg'>
             <div className='space-x-10 text-bold text-lg text-blue-950 '>
@@ -16,7 +16,7 @@ export const Navbar=()=>{
                 </div>
                
                 <div className='w-[1.5rem] h-[1.5rem] bg-red-500 absolute bottom-0 right-0 rounded-full 
-               flex  justify-items-center justify-center text-white translate-x-[25%] translate-y-[25%] cursor-pointer'>+ </div>
+               flex  justify-items-center justify-center text-white translate-x-[25%] translate-y-[25%] cursor-pointer'>{CartQuantity}</div>
         
             </div>
             
